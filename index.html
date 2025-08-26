@@ -6,17 +6,17 @@
   <body>
 
 <h1>Tip Calculator</h1>
-<form action="index.html">
+<form action="index/.html">
   <label for="bill" >Please Enter Bill Amount: </label><br>
   <input type="double" id="bill" name ="bill" Value = ""><br>
   <input type="submit" value="Submit" onclick="showInput();"><br/>
   <label for="enteredBill">Entered Bill: <span id="enteredBill"></span></label>
 
   <h2>Tip Calculation</h2>
-    bill=document.getElementById("enteredBill").innerHTML;
-    <p>Assuming 22% tip, your total is: {bill * 1.22}</p> 
-    <p>Assuming 20% tip, your total is: {bill * 1.20}</p>
-    <p>Assuming 18% tip, your total is: {bill * 1.18}</p>
+    var inputElement = document.getElementById('enteredBill');
+    var value = inputElement.value; 
+    <p>Assuming 20% tip, your total is: {value * 1.20}</p>
+    <p>Assuming 18% tip, your total is: {value * 1.18}</p>
 
 
   <!--
