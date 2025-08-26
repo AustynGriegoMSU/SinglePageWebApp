@@ -8,12 +8,22 @@
 <h1>Tip Calculator</h1>
 <form action="secondpage.html">
   <label for="bill" >Please Enter Bill Amount: </label><br>
-  <input type="double" id="Bill" name ="Bill" Value = ""><br>
-  <input type="submit" value="Submit">
+  <input type="double" id="bill" name ="bill" Value = ""><br>
+  <input type="submit" value="Submit" onclick="showInput();"><br/>
+  <label>Entered Bill: <span id="enteredBill"></span></label>
+
+<h2>Tip Calculation</h2>
+<p>Assuming 22% tip, your total is: </p> 
+<p>Assuming 20% tip, your total is: </p>
+<p>Assuming 18% tip, your total is: </p>
+
 
   <!--
   FOR loop to calculate tip
-
+  for check in Bill
+    tip = check * 0.20
+    total = check + tip
+    print(total)
   -->
 </form>
 
