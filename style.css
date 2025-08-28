@@ -1,14 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
+  background-color: lightblue;
 }
-
-h1 {
-  color: rgb(244, 197, 197);
-  margin-left: 20px;
-}
-
-.submit_button {
-  background-color: green;
-  color: white;
 }
